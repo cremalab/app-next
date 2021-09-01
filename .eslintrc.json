@@ -1,10 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "react",
-    "cypress"
-  ],
+  "plugins": ["@typescript-eslint", "react", "cypress"],
   "extends": [
     "react-app",
     "eslint:recommended",
