@@ -1,8 +1,11 @@
 import Head from "next/head"
-import { Nav } from "../components/Nav/Nav"
+import { Nav } from "../components/Nav"
 import { Welcome } from "../components/Welcome/Welcome"
 
-export const Home = (): JSX.Element => (
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface Props {}
+
+export const Home = (_: Props): JSX.Element => (
   <div className="container">
     <Head>
       <title>Crema App Next</title>

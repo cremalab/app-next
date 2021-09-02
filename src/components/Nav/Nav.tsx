@@ -1,43 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from "next/link"
+import styles from "./Nav.module.css"
 
-export function Nav() {
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface Props {}
+
+export function Nav(_: Props) {
   return (
-    <>
-      <nav className="Nav">
-        <ul className="Nav-list">
-          <li>
-            <Link href="/" passHref>
-              <a className="Nav-link">Welcome</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/ssr" passHref>
-              <a className="Nav-link">SSR</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/ssg" passHref>
-              <a className="Nav-link">SSG</a>
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <style jsx>{`
-        .Nav {
-          text-align: left;
-        }
-
-        .Nav-list {
-          display: flex;
-          list-style-type: none;
-        }
-
-        .Nav-link {
-          margin-right: 1rem;
-          color: #ff4858;
-        }
-      `}</style>
-    </>
+    <nav className={styles.container}>
+      <ul className={styles.list}>
+        <li>
+          <Link href="/" passHref>
+            <a className={styles.link}>Welcome</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/ssr" passHref>
+            <a className={styles.link}>SSR</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/ssg" passHref>
+            <a className={styles.link}>SSG</a>
+          </Link>
+        </li>
+      </ul>
+    </nav>
   )
 }

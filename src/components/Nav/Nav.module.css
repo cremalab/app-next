@@ -1,0 +1,13 @@
+.container {
+  text-align: left;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.link {
+  margin-right: 1rem;
+  color: #ff4858;
+}
