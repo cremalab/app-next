@@ -16,4 +16,21 @@ module.exports = {
     "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/src/utils/testUtils/fileMock.ts",
   },
   setupFilesAfterEnv: ["<rootDir>/src/utils/testUtils/setupTests.ts"],
+  collectCoverageFrom: [
+    "src/**/*.{ts,tsx}",
+    "!**/*.d.ts",
+    "!node_modules",
+    "!src/**/?(*.)stories.{ts,tsx}",
+    "!src/**/?(*.)test.{ts,tsx}",
+    "!src/**/index.{ts,tsx}",
+    "!src/types/*",
+    "!src/reportWebVitals.ts",
+    "!src/serviceWorker.ts",
+    "!.next",
+    "!cypress",
+    "!.storybook",
+    "!src/**/_app.page.tsx",
+    "!src/utils/testUtils",
+    "!src/utils/storybook",
+  ]
 }

@@ -1,4 +1,6 @@
 {
   "baseUrl": "http://localhost:3000",
-  "port": 5051
+  "port": 5051,
+  "screenshotOnRunFailure": false,
+  "video": false
 }

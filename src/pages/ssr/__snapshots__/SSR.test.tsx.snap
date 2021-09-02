@@ -2,87 +2,71 @@
 
 exports[`SSR page matches snapshot 1`] = `
 <DocumentFragment>
-  <div
+  <nav
     class="container"
   >
-    <nav
+    <ul
+      class="list"
+    >
+      <li>
+        <a
+          class="link"
+          href="/"
+        >
+          Welcome
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/SSR"
+        >
+          SSR
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/SSG"
+        >
+          SSG
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div
       class="container"
     >
-      <ul
-        class="list"
+      <header
+        class="header"
       >
-        <li>
-          <a
-            class="link"
-            href="/"
-          >
-            Welcome
-          </a>
-        </li>
-        <li>
-          <a
-            class="link"
-            href="/SSR"
-          >
-            SSR
-          </a>
-        </li>
-        <li>
-          <a
-            class="link"
-            href="/SSG"
-          >
-            SSG
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <main
-      class="jsx-289177152"
-    >
-      <div
-        class="jsx-289177152 SSR"
-      >
-        <header
-          class="jsx-289177152 SSR-header"
+        <h1>
+          Server Side Rendering
+        </h1>
+        <p>
+          Random number on page generation: 
+          <code>
+            42
+          </code>
+        </p>
+        <p>
+          Edit 
+          <code>
+            src/pages/ssr/index.page.tsx
+          </code>
+           and save to reload.
+        </p>
+        <a
+          class="link"
+          href="https://nextjs.org/docs/basic-features/pages#server-side-rendering"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <h1
-            class="jsx-289177152 Welcome-h1"
-          >
-            Server Side Rendering
-          </h1>
-          <p
-            class="jsx-289177152"
-          >
-            Random number on page generation: 
-            <code
-              class="jsx-289177152"
-            >
-              42
-            </code>
-          </p>
-          <p
-            class="jsx-289177152"
-          >
-            Edit 
-            <code
-              class="jsx-289177152"
-            >
-              src/pages/ssr/index.page.tsx
-            </code>
-             and save to reload.
-          </p>
-          <a
-            class="jsx-289177152 SSR-link"
-            href="https://nextjs.org/docs/basic-features/pages#server-side-rendering"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Learn More About SSR
-          </a>
-        </header>
-      </div>
-    </main>
-  </div>
+          Learn More About SSR
+        </a>
+      </header>
+    </div>
+  </main>
 </DocumentFragment>
 `;

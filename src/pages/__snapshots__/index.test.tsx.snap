@@ -44,9 +44,7 @@ exports[`Home page matches snapshot 1`] = `
         <header
           class="header"
         >
-          <h1
-            class="h1"
-          >
+          <h1>
             Welcome
           </h1>
           <div

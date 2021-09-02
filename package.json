@@ -4,26 +4,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc --pretty --noEmit",
-    "format": "prettier --write .",
-    "lint": "eslint . --ext ts --ext tsx --ext js",
-    "test": "jest",
-    "test-all": "npm run lint && npm run type-check && npm run test",
-    "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook",
-    "cypress": "npx cypress run",
-    "cypress:headless": "npx cypress open"
+    "start:ci": "cross-env CI=true run-s build start",
+    "test": "npm run test:unit",
+    "test:unit": "jest --watch",
+    "test:unit:ci": "jest --ci --runInBand",
+    "test:unit:coverage": "npm run test:unit -- --coverage --watchAll=false --watch=false",
+    "test:unit:coverage:watch": "npm run test:unit:coverage -- --watchAll=true",
+    "test:types": "tsc --pretty --noEmit",
+    "test:lint": "eslint -c ./.eslintrc.json ./src --ext .ts,.tsx",
+    "test:lint:fix": "npm run test:lint -- --fix",
+    "test:e2e": "npx cypress open",
+    "test:e2e:headless": "npx cypress run",
+    "test:e2e:ci": "cross-env CI=true CYPRESS_baseUrl=http://localhost:3000 start-server-and-test start:ci http://localhost:3000 test:e2e:headless",
+    "test:ci": "cross-env CI=true run-s test:lint test:types test:unit:ci test:e2e:ci",
+    "test:playground": "start-storybook -p 6006 -s ./public",
+    "test:playground:build": "build-storybook -s ./public --no-dll",
+    "build-storybook": "build-storybook -s ./public"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run type-check"
+      "pre-push": "npm run test:ci"
     }
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "npm run lint",
-      "npm run format"
+      "npm run test:lint",
+      "npm run test:lint:fix"
     ]
   },
   "dependencies": {
@@ -33,6 +40,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
+    "@next/eslint-plugin-next": "^11.1.2",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
@@ -47,6 +55,7 @@
     "@typescript-eslint/parser": "^4.14.2",
     "babel-jest": "^27.0.2",
     "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-config-react-app": "^6.0.0",
@@ -62,10 +71,12 @@
     "jest": "^27.0.4",
     "jest-watch-typeahead": "^0.6.1",
     "lint-staged": "^10.0.10",
+    "npm-run-all": "^4.1.5",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.2",
     "sass": "^1.38.2",
     "sass-loader": "^10.2.0",
+    "start-server-and-test": "^1.14.0",
     "typescript": "^4.1.3"
   }
 }
