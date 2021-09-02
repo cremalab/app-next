@@ -8,7 +8,7 @@ export function Welcome(_: Props) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.h1}>Welcome</h1>
+        <h1>Welcome</h1>
         <div className={styles.logo}>
           <Image
             src="/logo.svg"

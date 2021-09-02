@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SSG page matches snapshot 1`] = `
+exports[`SSR page matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="container"
@@ -38,47 +38,47 @@ exports[`SSG page matches snapshot 1`] = `
       </ul>
     </nav>
     <main
-      class="jsx-2317350201"
+      class="jsx-289177152"
     >
       <div
-        class="jsx-2317350201 SSG"
+        class="jsx-289177152 SSR"
       >
         <header
-          class="jsx-2317350201 SSG-header"
+          class="jsx-289177152 SSR-header"
         >
           <h1
-            class="jsx-2317350201 Welcome-h1"
+            class="jsx-289177152 Welcome-h1"
           >
-            Static Site Generation
+            Server Side Rendering
           </h1>
           <p
-            class="jsx-2317350201"
+            class="jsx-289177152"
           >
             Random number on page generation: 
             <code
-              class="jsx-2317350201"
+              class="jsx-289177152"
             >
               42
             </code>
           </p>
           <p
-            class="jsx-2317350201"
+            class="jsx-289177152"
           >
             Edit 
             <code
-              class="jsx-2317350201"
+              class="jsx-289177152"
             >
-              src/pages/ssg/index.page.tsx
+              src/pages/ssr/index.page.tsx
             </code>
              and save to reload.
           </p>
           <a
-            class="jsx-2317350201 SSG-link"
-            href="https://nextjs.org/docs/basic-features/pages#static-generation-recommended"
+            class="jsx-289177152 SSR-link"
+            href="https://nextjs.org/docs/basic-features/pages#server-side-rendering"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Learn More About SSG
+            Learn More About SSR
           </a>
         </header>
       </div>

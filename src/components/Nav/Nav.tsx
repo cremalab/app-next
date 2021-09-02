@@ -15,12 +15,12 @@ export function Nav(_: Props) {
           </Link>
         </li>
         <li>
-          <Link href="/ssr" passHref>
+          <Link href="/SSR" passHref>
             <a className={styles.link}>SSR</a>
           </Link>
         </li>
         <li>
-          <Link href="/ssg" passHref>
+          <Link href="/SSG" passHref>
             <a className={styles.link}>SSG</a>
           </Link>
         </li>

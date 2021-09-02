@@ -22,7 +22,7 @@ exports[`Home page matches snapshot 1`] = `
         <li>
           <a
             class="link"
-            href="/ssr"
+            href="/SSR"
           >
             SSR
           </a>
@@ -30,7 +30,7 @@ exports[`Home page matches snapshot 1`] = `
         <li>
           <a
             class="link"
-            href="/ssg"
+            href="/SSG"
           >
             SSG
           </a>
@@ -39,7 +39,7 @@ exports[`Home page matches snapshot 1`] = `
     </nav>
     <main>
       <div
-        class="contianer"
+        class="container"
       >
         <header
           class="header"
