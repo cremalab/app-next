@@ -10,7 +10,9 @@
     "test": "jest",
     "test-all": "npm run lint && npm run type-check && npm run test",
     "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "cypress": "npx cypress run",
+    "cypress:headless": "npx cypress open"
   },
   "husky": {
     "hooks": {
@@ -35,6 +37,7 @@
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/react": "^6.3.7",
+    "@testing-library/cypress": "^8.0.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.23",
