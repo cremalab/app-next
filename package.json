@@ -1,5 +1,6 @@
 {
-  "private": true,
+  "name": "app-next",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
