@@ -22,7 +22,7 @@ exports[`Home page matches snapshot 1`] = `
         <li>
           <a
             class="link"
-            href="/SSR"
+            href="/ssr"
           >
             SSR
           </a>
@@ -30,7 +30,7 @@ exports[`Home page matches snapshot 1`] = `
         <li>
           <a
             class="link"
-            href="/SSG"
+            href="/ssg"
           >
             SSG
           </a>

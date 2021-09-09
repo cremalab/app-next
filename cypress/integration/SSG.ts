@@ -1,6 +1,6 @@
 describe("SSG", () => {
   it("Renders correctly", () => {
-    cy.visit("/SSG")
+    cy.visit("/ssg")
 
     cy.findByText("Static Site Generation").should("exist")
 

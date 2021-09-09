@@ -36,6 +36,7 @@ export const SSG = ({ data }: { data: number }): JSX.Element => (
   </>
 )
 
+/* istanbul ignore next */
 export async function getStaticProps(_props: GetStaticProps) {
   return {
     props: { data: Math.floor(Math.random() * 100) },

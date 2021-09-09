@@ -1,6 +1,6 @@
 describe("SSR", () => {
   it("Renders correctly", () => {
-    cy.visit("/SSR")
+    cy.visit("/ssr")
 
     cy.findByText("Server Side Rendering").should("exist")
 

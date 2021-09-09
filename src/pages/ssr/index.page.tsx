@@ -36,6 +36,7 @@ export const SSR = ({ data }: { data: number }): JSX.Element => (
   </>
 )
 
+/* istanbul ignore next */
 export async function getServerSideProps(_props: GetServerSidePropsContext) {
   return {
     props: { data: Math.floor(Math.random() * 100) },
