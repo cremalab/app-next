@@ -48,7 +48,7 @@ Run the following scripts with `npm run <SCRIPT_HERE>`:
 - `build` - build app
 - `start` - start app
 - `new:component` - generate a new component
-- `new:component` - generate a new page
+- `new:page` - generate a new page
 - `new:util` - generate a new util(ity)
 - `new:type` - generate a new type
 - `test:deps` - run dependency validation tests
