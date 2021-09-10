@@ -21,7 +21,11 @@
     "test:ci": "cross-env CI=true run-s test:lint test:types test:deps test:unit:ci test:e2e:ci",
     "test:playground": "start-storybook -p 6006 -s ./public",
     "test:playground:build": "build-storybook -s ./public --no-dll",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "new:component": "hygen component new",
+    "new:page": "hygen page new",
+    "new:type": "hygen type new",
+    "new:util": "hygen util new"
   },
   "husky": {
     "hooks": {
@@ -70,6 +74,7 @@
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.2.3",
+    "hygen": "^6.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.4",
     "jest-watch-typeahead": "^0.6.1",
