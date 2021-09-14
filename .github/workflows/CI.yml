@@ -30,6 +30,7 @@ jobs:
       - run: npm run test:types
       - run: npm run test:unit:ci
       - run: npm run test:e2e:ci
+      - run: npm run test:playground:build
   
   Test:
     if: ${{ github.repository != 'cremalab/app-next' }}
