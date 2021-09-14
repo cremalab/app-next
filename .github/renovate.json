@@ -5,6 +5,7 @@
   ],
   "branchPrefix": "main-renovate-",
   "prCreation": "not-pending",
+  "prNotPendingHours": 1,
   "labels": [
     "maintenance"
   ],
