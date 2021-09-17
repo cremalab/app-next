@@ -32,5 +32,6 @@ module.exports = {
     "!src/**/_app.page.tsx",
     "!src/utils/testUtils",
     "!src/utils/storybook",
-  ]
+    "!src/**/_document.page.tsx",
+  ],
 }

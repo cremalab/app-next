@@ -8,6 +8,7 @@ import Document, {
 } from "next/document"
 import flush from "styled-jsx/server"
 
+// CSP implementation based on https://github.com/vercel/next.js/blob/canary/examples/styled-jsx-with-csp/pages/_document.jsx
 class CustomDocument extends Document<{ nonce: string }> {
   static async getInitialProps(ctx: DocumentContext) {
     const nonce = nanoid()
