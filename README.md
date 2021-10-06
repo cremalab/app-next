@@ -15,7 +15,7 @@ This project includes configuration and tooling that conforms to Crema's baselin
 - [Hygen](http://www.hygen.io) for component and util generators
 - [Jest](https://jestjs.io) for unit tests
 - [Prettier](https://prettier.io) for code formatting (🚨 DO NOT enable the VS Code Prettier plugin—ESLint runs it for you under the hood. 🎉)
-- [Storybook](https://storybook.js.org) for component playground (and used by Loki)
+- [Storybook](https://storybook.js.org) for component playground
 - [TypeScript](http://www.typescriptlang.org) for Static Typing in JavaScript ([Learn](http://www.typescriptlang.org/docs/handbook/basic-types.html))
 
 ## 🏗 Setup
