@@ -47,7 +47,7 @@
     "styled-jsx": "4.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.15.8",
+    "@babel/core": "7.16.0",
     "@next/eslint-plugin-next": "11.1.2",
     "@storybook/addon-actions": "6.3.12",
     "@storybook/addon-docs": "6.3.12",
