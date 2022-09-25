@@ -65,7 +65,7 @@
     "babel-jest": "27.4.2",
     "babel-loader": "8.2.3",
     "cross-env": "7.0.3",
-    "dependency-cruiser": "10.8.0",
+    "dependency-cruiser": "11.16.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-config-react-app": "6.0.0",
